@@ -12,7 +12,7 @@ COPY ./ros2_packages/ /home/dev_ws/src
 # Copy example scripts
 RUN mkdir /home/dev_ws/scripts
 COPY ./scripts/ /home/dev_ws/scripts/
-RUN chmod +x ./scripts/*
+RUN chmod +x /home/dev_ws/scripts/*
 
 #Check out ROS-TCP-Endpoint, ROS2 version
 RUN git clone https://github.com/Unity-Technologies/ROS-TCP-Endpoint /home/dev_ws/src/ros_tcp_endpoint -b ROS2v0.6.0
