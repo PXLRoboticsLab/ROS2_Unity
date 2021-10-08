@@ -24,6 +24,7 @@ Run ```./01_launch.sh```
 * Run ```./02_attach.sh```
 * Check the ```scripts``` folder for examples.
 * When combined with the Unity container (*work in progress*), these scripts should work out of the box for the kart demo.
+* When adding new ROS2 packages or making changes, don't forget to ```colcon build``` your workspace and ```source it up``` again. (```cd /home/dev_ws && source /opt/ros/foxy/setup.bash && . install/local_setup.sh```)
 
 ## Contact
 
