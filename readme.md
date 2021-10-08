@@ -23,7 +23,7 @@ Run ```./01_launch.sh```
 
 * Run ```./02_attach.sh```
 * Check the ```scripts``` folder for examples.
-* When combined with the Unity container, these scripts should work out of the box for the kart demo.
+* When combined with the Unity container (*work in progress*), these scripts should work out of the box for the kart demo.
 
 ## Contact
 
