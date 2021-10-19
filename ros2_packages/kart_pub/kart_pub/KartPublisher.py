@@ -32,7 +32,7 @@ def main(args=None):
 
     rclpy.spin(kart_publisher)
 
-    minimal_publisher.destroy_node()
+    kart_publisher.destroy_node()
     rclpy.shutdown()
 
 

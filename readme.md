@@ -17,13 +17,23 @@ Run ```./00_build.sh```
 
 ## Running the container
 
-Run ```./01_launch.sh```
+Run ```./01_launch.sh```, execute ```./02_attach.sh``` to ... attach your terminal to the container. (duh)
 
-## Attaching a bash terminal to the container
+## Scripts
 
-* Run ```./02_attach.sh```
-* Check the ```scripts``` folder for examples.
-* When combined with the Unity container (*work in progress*), these scripts should work out of the box for the kart demo.
+Check the ```/home/dev_ws/scripts``` folder for some examples.
+
+```./01_start_tcp_endpoint.sh``` is needed to establish connection between this container and your Unity environment.
+
+Other scripts are optional:
+* ```02_launch_publisher``` - Demo scripts that starts a ROS2 publisher that sends a custom KartControl message. (simkart_interfaces/KartControl.msg) It tells the cart to accelerate and alter left & right steering every 2 seconds. Should work out of the box when combined with the Unity container and the ROSControl demo project.
+* ```03_launch_rqt_image_view``` - Script that fires up rqt_image_view. This allows you to view published images in the ROS network. Should work out of the box when combined with the Unity container and the ROSControl demo project.
+* More can be added in the future
+
+
+## Also check
+
+Check out the accompanying *Unity Hub container* to ensure a quick setup.
 
 ## Contact
 
