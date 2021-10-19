@@ -19,7 +19,7 @@ Run ```./00_build.sh```
 
 Run ```./01_launch.sh```, execute ```./02_attach.sh``` to ... attach your terminal to the container. (duh)
 
-## Scripts
+## Working with the container
 
 Check the ```/home/dev_ws/scripts``` folder for some examples.
 
@@ -29,6 +29,13 @@ Other scripts are optional:
 * ```02_launch_publisher``` - Demo scripts that starts a ROS2 publisher that sends a custom KartControl message. (simkart_interfaces/KartControl.msg) It tells the cart to accelerate and alter left & right steering every 2 seconds. Should work out of the box when combined with the Unity container and the ROSControl demo project.
 * ```03_launch_rqt_image_view``` - Script that fires up rqt_image_view. This allows you to view published images in the ROS network. Should work out of the box when combined with the Unity container and the ROSControl demo project.
 * More can be added in the future
+
+### Changing ROS2 packages
+When adding new ROS2 packages or making changes, don't forget to ```colcon build``` your workspace and ```source it up``` again. 
+
+### Sourcing it up
+
+```source /opt/ros/foxy/setup.bash && . /home/dev_ws/install/local_setup.sh```
 
 
 ## Also check
