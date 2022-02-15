@@ -21,7 +21,9 @@ RUN git clone https://github.com/Unity-Technologies/ROS-TCP-Endpoint /home/dev_w
 RUN apt-get update && apt-get upgrade -y \
         && apt-get install -y nano \
         && apt-get install -y ros-foxy-rqt-image-view \
-        && apt-get install -y ros-foxy-compressed-image-transport
+        && apt-get install -y ros-foxy-compressed-image-transport \
+        && apt-get install -y python3-opencv \
+        && apt-get install -y qt5-default
 
 # Reference script with commands to source workspace
 COPY ./source_ros.sh /home/dev_ws/source_ros.sh
