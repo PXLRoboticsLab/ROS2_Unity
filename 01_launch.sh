@@ -1,6 +1,8 @@
 #!/bin/bash
 
 xhost +local:docker
+sudo xhost +
+export DISPLAY=:0.0
 docker run --privileged -it \
         -d \
         --name foxy_unity \
