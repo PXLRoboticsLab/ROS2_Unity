@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(padawans)
+project(graph)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -22,10 +22,9 @@ find_package(ament_cmake REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 find_package(rosidl_default_generators REQUIRED)
-
 rosidl_generate_interfaces(${PROJECT_NAME}
-   "srv/Nodes.srv"
-   "srv/NodeInfo.srv"
+	"srv/NodeInfo.srv"
+	"srv/Nodes.srv"
 )
 
 if(BUILD_TESTING)
