@@ -40,7 +40,11 @@ When adding new ROS2 packages or making changes, don't forget to ```colcon build
 
 ## Also check
 
-Check out the accompanying [Unity Hub container](https://github.com/PXLRoboticsLab/Unity_Hub) to ensure a quick setup.
+We have an experimental accompanying [Unity Hub container](https://github.com/PXLRoboticsLab/Unity_Hub) to ensure a quick setup.
+
+This should enable you to run a Unity editor in a Docker container.
+
+**However**, you can also just run Unity locally on your host machine, if that makes it easier.
 
 ## Contact
 
