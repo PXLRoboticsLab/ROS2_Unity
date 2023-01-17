@@ -16,7 +16,7 @@ RUN chmod +x /home/dev_ws/scripts/*
 
 #Check out ROS-TCP-Endpoint, ROS2 version
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F42ED6FBAB17C654
-RUN git clone https://github.com/Unity-Technologies/ROS-TCP-Endpoint /home/dev_ws/src/ros_tcp_endpoint -b ROS2v0.6.0
+RUN git clone https://github.com/Unity-Technologies/ROS-TCP-Endpoint /home/dev_ws/src/ros_tcp_endpoint -b ROS2v0.7.0
 
 RUN apt-get update && apt-get upgrade -y \
         && apt-get install -y nano \
