@@ -7,7 +7,7 @@ We added some extra stuff to make testing and prototyping faster. (building, sou
 
 ## Installation
 
-Make all the scripts executable:
+Make sure all scripts are executable:
 
 ```chmod +x 0*.sh```
 
