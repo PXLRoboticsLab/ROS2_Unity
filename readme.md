@@ -7,6 +7,8 @@ We added some extra stuff to make testing and prototyping faster. (building, sou
 
 ## Installation
 
+Clone the repo.
+
 Make sure all scripts are executable:
 
 ```chmod +x 0*.sh```
