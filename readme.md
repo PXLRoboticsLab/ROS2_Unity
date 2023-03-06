@@ -19,14 +19,10 @@ Run ```./00_build.sh```
 
 Build a nice simulation scene in Unity and fire it up. It should work fine if you run Unity locally on your host machine.
 
-You can also check some demo scenes that we used for testing purposes:
-* [ROSControl - Kart demo](https://hogeschoolpxl-my.sharepoint.com/:u:/g/personal/20004716_pxl_be/Ee_vpv0UOvJEgDKkral1awgBZERW1gyTLewqM60CmZitjw?e=3FbEz2)
-   * Default Unity tutorial with the kart, modified to enable ROS control from outside Unity. Use the scripts in this container (02_launch_publisher) for quick try-out.
-* [AI Hub](https://hogeschoolpxl-my.sharepoint.com/:u:/g/personal/20004716_pxl_be/EZmUfmWsjg5NpSgBnk3SbHMBtUvNyH67CW0jtnn7dbBmZA?e=mJ5tFr)
-   * Unity scene that represents our AI Hub @ Corda. Big thanks to Steve Van Reeth for creating and sharing this!
+If you're going to use a Unity simulation that is provided as an executable, you can skip this section. (Go to 'Running the container' below)
+
 
 ### Start from scratch
-
 If you start a new Unity project from scratch, execute the following steps.
 Basically, all steps are copied from [Unity Robotics Hub](https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/setup.md#-unity-setup)
 
@@ -37,12 +33,18 @@ Basically, all steps are copied from [Unity Robotics Hub](https://github.com/Uni
 3. More documentation can be found at [Unity Robotics Hub](https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/README.md) and [ROS TCP Connector](https://github.com/Unity-Technologies/ROS-TCP-Connector)
 
 ### Custom messages
-
 Standard ROS messages are available in the ROS TCP Connector plugin. ([view here](https://github.com/Unity-Technologies/ROS-TCP-Connector/tree/main/com.unity.robotics.ros-tcp-connector/Runtime/Messages))
 
 If you want to import custom ROS messages, you'll have to build them in Unity (once) so that your scripts recognize them as valid messages. View an example at [this URL](https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/README.md).
 
 It could prove convenient to share a folder between this container and the ROS-Unity container, so that you can share the custom created ROS messages between them. If this is not the case, then you'll have to copy your custom ROS messages from your ROS2 workspace to this container, so that you can access them and build them from the Unity editor.
+
+### Demo scenes
+You can also check some demo scenes that we used for testing purposes:
+* [ROSControl - Kart demo](https://hogeschoolpxl-my.sharepoint.com/:u:/g/personal/20004716_pxl_be/Ee_vpv0UOvJEgDKkral1awgBZERW1gyTLewqM60CmZitjw?e=3FbEz2)
+   * Default Unity tutorial with the kart, modified to enable ROS control from outside Unity. Use the scripts in this container (02_launch_publisher) for quick try-out.
+* [AI Hub](https://hogeschoolpxl-my.sharepoint.com/:u:/g/personal/20004716_pxl_be/EZmUfmWsjg5NpSgBnk3SbHMBtUvNyH67CW0jtnn7dbBmZA?e=mJ5tFr)
+   * Unity scene that represents our AI Hub @ Corda. Big thanks to Steve Van Reeth for creating and sharing this!
 
 ## Running the container
 
