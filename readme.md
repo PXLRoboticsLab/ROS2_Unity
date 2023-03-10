@@ -9,19 +9,17 @@ We added some extra stuff to make testing and prototyping faster. (building, sou
 
 Clone the repo.
 
-Make sure all scripts are executable:
+<!--Drop your custom ROS2 packages in the ```ros2_packages``` folder. They will be automatically included and built in the container.-->
 
-```chmod +x 0*.sh```
-
-Drop your custom ROS2 packages in the ```ros2_packages``` folder. They will be automatically included and built in the container.
-
-Run ```./00_build.sh```
+* In case you want to clear the existing image (clean start): run ```./000_remove_images.sh```
+* Run ```./001_build_images.sh```.
+* You can also combine these steps with ```./002_rebuild_images.sh```.
 
 ## The Unity part
 
-Build a nice simulation scene in Unity and fire it up. It should work fine if you run Unity locally on your host machine.
+Now you'll build a simulation scene in Unity and fire it up. It should work fine if you run Unity locally on your host machine.
 
-If you're going to use a Unity simulation that is provided as an executable, you can skip this section. (Go to 'Running the container' below)
+If you're going to use a Unity simulation that is already provided as an executable, you can skip this section. (Go to 'Running the container' below)
 
 
 ### Start from scratch
@@ -50,11 +48,11 @@ You can also check some demo scenes that we used for testing purposes:
 
 ## Running the container
 
-Run ```./01_launch.sh```, execute ```./02_attach.sh``` to ... attach your terminal to the container. (duh)
+Run ```./003_start_pxl_foxy_unity.sh```, execute ```./004_attach_bash_to_foxy_unity.sh``` to ... attach your terminal to the container. (duh)
 
 ## Working with the container
 
-Check the ```~/dev_ws/scripts``` folder for some examples.
+Check the ```~/dev_ws/Scripts``` folder for some examples.
 
 ```./01_start_tcp_endpoint.sh``` is needed to establish connection between this container and your Unity environment.
 
@@ -72,4 +70,4 @@ When adding new ROS2 packages or making changes, don't forget to ```colcon build
 
 ## Contact
 
-Contact [sam.vanderstraeten@pxl.be](sam.vanderstraeten@pxl.be) if you need something! Bring cookies to increase the probability of a helpful answer.
+Contact [sam.vanderstraeten@pxl.be](sam.vanderstraeten@pxl.be) or [sam.vanrijn@pxl.be](sam.vanrijn@pxl.be) if you need something! Bring cookies to increase the probability of a helpful answer.
