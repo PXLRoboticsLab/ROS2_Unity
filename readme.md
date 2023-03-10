@@ -54,7 +54,7 @@ Run ```./01_launch.sh```, execute ```./02_attach.sh``` to ... attach your termin
 
 ## Working with the container
 
-Check the ```/home/dev_ws/scripts``` folder for some examples.
+Check the ```~/dev_ws/scripts``` folder for some examples.
 
 ```./01_start_tcp_endpoint.sh``` is needed to establish connection between this container and your Unity environment.
 
@@ -68,7 +68,7 @@ When adding new ROS2 packages or making changes, don't forget to ```colcon build
 
 ### Sourcing it up
 
-```source /opt/ros/foxy/setup.bash && . /home/dev_ws/install/local_setup.sh```
+```source /opt/ros/foxy/setup.bash && . ~/dev_ws/install/local_setup.sh```
 
 ## Contact
 
