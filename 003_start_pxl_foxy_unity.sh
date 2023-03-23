@@ -2,8 +2,7 @@
 
 xhost +local:docker
 sudo xhost +
-docker run --privileged -it \
-        -d \
+docker run --privileged -it --rm \
         --name foxy_unity \
         --hostname foxy_unity \
         --network host \
@@ -11,4 +10,5 @@ docker run --privileged -it \
         -v `pwd`/Projects/dev_ws_src:/home/user/dev_ws/src \
         -e "DISPLAY=$DISPLAY" \
         --device=/dev/dri:/dev/dri \
-        foxy_unity bash
+        foxy_unity \
+        bash
